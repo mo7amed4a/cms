@@ -30,6 +30,12 @@
       "relation": "manyToOne",
       "target": "api::team.team",
       "inversedBy": "technologies"
+    },
+    "service": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::service.service",
+      "inversedBy": "technologies"
     }
   }
 }

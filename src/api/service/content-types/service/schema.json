@@ -43,6 +43,12 @@
       "pluginOptions": {},
       "type": "blocks",
       "required": true
+    },
+    "technologies": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::technology.technology",
+      "mappedBy": "service"
     }
   }
 }

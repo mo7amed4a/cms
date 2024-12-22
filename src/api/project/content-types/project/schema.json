@@ -45,24 +45,35 @@
       "mappedBy": "projects"
     },
     "screenMobile": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "screensMobile": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
+      ]
+    },
+    "vedio": {
       "type": "media",
-      "multiple": true
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "files",
+        "videos"
+      ]
     }
   }
 }
