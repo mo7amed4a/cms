@@ -21,8 +21,14 @@
     "email": {
       "type": "email"
     },
-    "descripton": {
-      "type": "richtext"
+    "video": {
+      "allowedTypes": [
+        "files",
+        "videos"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": false
     }
   }
 }
