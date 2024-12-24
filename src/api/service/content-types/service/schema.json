@@ -49,6 +49,11 @@
       "relation": "oneToMany",
       "target": "api::technology.technology",
       "mappedBy": "service"
+    },
+    "details": {
+      "type": "component",
+      "repeatable": true,
+      "component": "services.service-component"
     }
   }
 }

@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_services_service_components",
+  "info": {
+    "displayName": "serviceComponent"
+  },
+  "options": {},
+  "attributes": {
+    "description": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
