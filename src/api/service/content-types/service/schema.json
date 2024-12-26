@@ -54,6 +54,15 @@
       "type": "component",
       "repeatable": true,
       "component": "services.service-component"
+    },
+    "icon": {
+      "allowedTypes": [
+        "images",
+        "files"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
     }
   }
 }
