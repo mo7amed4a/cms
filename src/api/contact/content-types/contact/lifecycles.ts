@@ -6,8 +6,8 @@ export default {
         const ip = "127.0.0.1";
         try {
             const emailOptions = {
-              to: "info@webbing-agency.com",
-              subject: "subject",
+              to: "leads@webbing-agency.com",
+              subject: `Leads to Webbing Agency | ${firstname}`,
               html: generateEmailTemplate({ firstname, lastname, email, phone, subject, 
                 date: new Date(createdAt).toLocaleDateString('en-GB', { year: 'numeric', month: 'long', day: 'numeric' })
               , message, ip }),
