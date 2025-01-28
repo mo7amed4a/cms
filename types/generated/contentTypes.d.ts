@@ -486,15 +486,8 @@ export interface ApiProjectProject extends Struct.CollectionTypeSchema {
       'api::project.project'
     > &
       Schema.Attribute.Private;
+    mobile: Schema.Attribute.Component<'projects.mobile-one-images', false>;
     publishedAt: Schema.Attribute.DateTime;
-    screenMobile: Schema.Attribute.Media<
-      'images' | 'files' | 'videos' | 'audios'
-    >;
-    screensMobile: Schema.Attribute.Media<
-      'images' | 'files' | 'videos' | 'audios',
-      true
-    >;
-    screenWeb: Schema.Attribute.Media<'images' | 'files' | 'videos'>;
     services: Schema.Attribute.Relation<'manyToMany', 'api::service.service'>;
     slug: Schema.Attribute.String & Schema.Attribute.Unique;
     title: Schema.Attribute.String;
@@ -502,6 +495,7 @@ export interface ApiProjectProject extends Struct.CollectionTypeSchema {
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
     vedio: Schema.Attribute.Media<'files' | 'videos'>;
+    web: Schema.Attribute.Component<'projects.website-images', false>;
   };
 }
 

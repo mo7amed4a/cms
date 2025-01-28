@@ -28,43 +28,11 @@
       "type": "blocks",
       "required": true
     },
-    "screenWeb": {
-      "type": "media",
-      "multiple": false,
-      "required": false,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos"
-      ]
-    },
     "services": {
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::service.service",
       "mappedBy": "projects"
-    },
-    "screenMobile": {
-      "type": "media",
-      "multiple": false,
-      "required": false,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ]
-    },
-    "screensMobile": {
-      "type": "media",
-      "multiple": true,
-      "required": false,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ]
     },
     "vedio": {
       "type": "media",
@@ -74,6 +42,16 @@
         "files",
         "videos"
       ]
+    },
+    "web": {
+      "type": "component",
+      "repeatable": false,
+      "component": "projects.website-images"
+    },
+    "mobile": {
+      "type": "component",
+      "repeatable": false,
+      "component": "projects.mobile-one-images"
     }
   }
 }
